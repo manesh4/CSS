@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: orangered;
+            color: black;
+            padding: 22px;
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+        }
+        .main{
+            position: relative;
+            display: inline-block;
+        }
+        .ctn{
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 210px;
+            box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        .ctn a{
+            color: black;
+            padding: 14px 18px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .ctn a:hover{
+            background-color: white;
+        }
+
+        .main:hover .ctn{
+            display: block;
+        }
+        .main:hover .btn{
+            background-color: #3e8e41;
+        }
+
+        /* .main_drp{
+            position: relative;
+            display: inline-block;
+        }
+
+        .main_drpctn{
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 200px;
+            box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        .main_drp:hover .main_drpctn{
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="btn">Drop Down</button>
+        <div class="ctn">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- <h1>image view</h1>
+
+    <div class="main_drp">
+        <img src="./img/flaunter-com-237602-unsplash.jpg" alt="" height="50" width="100">
+    
+    <div class="main_drpctn">
+        <img src="./img/flaunter-com-237602-unsplash.jpg" alt="" height="200" width="300">
+    </div> -->
+</div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li{
+            display: inline;
+        }
+        span{
+            display: block;
+        }
+        .hidden{
+            display: none;
+        }
+        .static{
+            position: static;
+            border: 3px solid greenyellow;
+        }
+
+        .relative{
+            position: relative;
+            left: 30px;
+            border: 3px solid greenyellow;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid greenyellow;
+        }
+        .relative2{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid greenyellow;
+        
+        }
+        .absolute{
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid greenyellow;
+        }
+        .sticky{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: black;
+            color: orangered;
+            border: 3px solid rgb(11, 203, 50);
+        }
+
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .container{
+            position: relative;
+        }
+        .red{
+            position: relative;
+            z-index: 1;
+            border: 2px solid red;
+            height: 100px;
+            margin: 30px;
+        }
+        .yellow{
+            position: absolute;
+            z-index: 3;
+            background: yellow;
+ 
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green{
+            position: absolute;
+            z-index: 2;
+            background: green;
+            height: 100px;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+        }
+
+        .visible{
+            background-color: aqua;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: visible;
+        }
+
+        .hid{
+            background-color: rgb(225, 255, 0);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .scroll{
+            background-color: rgb(225, 255, 0);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: scroll;
+        }
+        .auto{
+            background-color: rgb(225, 255, 0);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: auto;
+        }
+
+        .xy{
+            background-color: rgb(225, 255, 0);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>display property</h1>
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+        </li>
+    </ul>
+
+    <span>Home</span>
+    <span>About</span>
+    <span>Contact</span>
+    <h1 class="hidden">this is display none</h1>
+
+    <h1>position : static,relative, fixed, absolute, sticky</h1>
+
+    <div class="static">
+        this is dive element for static position
+    </div>
+    <div class="relative">
+        this is dive element for relative position
+    </div>
+    <div class="fixed">
+        this is dive element for fixed position
+    </div> -->
+
+    <!-- <div class="relative2">
+        this is dive element for relative position
+ 
+    <div class="absolute">
+        this is dive element for absolute position
+    </div>
+</div> -->
+
+<!-- <div class="sticky">this is dive for sticky position</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+     repudiandae 
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+     repudiandae 
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+     repudiandae 
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.</p> -->
+
+    <!-- <hr>
+    <img src="./img/bg.jpg" alt="">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.</p> 
+
+<hr>
+
+<div class="container">
+    <div class="red">Red box</div>
+<div class="yellow">Yellow box</div>
+<div class="green">Green box</div>
+</div>
+
+<hr> -->
+
+<!-- <div class="visible">
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid
+</div> -->
+
+<!-- <div class="hid">
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid
+</div> -->
+
+<!-- <div class="scroll">
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid
+</div> -->
+
+<!-- <div class="auto">
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid
+</div> -->
+
+<!-- <div class="xy">
+    sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid expedita nobis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Repellat quisquam eius nemo ullam nesciunt! Numquam voluptas provident adipisci
+         repudiandae 
+        sed culpa exercitationem quae ipsam. A laboriosam deserunt aliquid
+</div> -->
+    </body>
+</html>

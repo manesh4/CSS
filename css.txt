@@ -1,0 +1,16 @@
+css -> cascading style sheet.
+css is used for to define styles for your web pages.
+
+3 types
+1. internal
+2. inline
+3. external
+
+syntax : 
+
+selector {
+    property:value;
+}
+
+slector : id , class, tagname, *--> universal selector, grouping .
+

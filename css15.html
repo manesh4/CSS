@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #880101;
+            border-radius: 6px;
+            resize: vertical;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        input[type=submit]
+        {
+            background-color: blueviolet;
+            color: white;
+            padding: 14px 22px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover{
+            background-color: #45a049;
+        }
+        .container{
+            border-radius: 6px;
+            background-color: rgb(227, 227, 227);
+            padding: 22px;
+
+        }
+
+        .col-25{
+            float: left;
+            width: 25%;
+            margin-top: 8px;
+        }
+        .col-75{
+            float: left;
+            width: 75%;
+            margin-top: 8px;
+
+        }
+
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a Form CSS </h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Quibusdam non blanditiis aliquid ab repudiandae. 
+         Nemo blanditiis, asperiores
+         labore earum enim veniam magnam cum nihil culpa sint 
+         aliquam architecto voluptate optio.
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Quibusdam non blanditiis aliquid ab repudiandae. 
+         Nemo blanditiis, asperiores
+         labore earum enim veniam magnam cum nihil culpa sint 
+         aliquam architecto voluptate optio.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Quibusdam non blanditiis aliquid ab repudiandae. 
+         Nemo blanditiis, asperiores
+         labore earum enim veniam magnam cum nihil culpa sint 
+         aliquam architecto voluptate optio.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Quibusdam non blanditiis aliquid ab repudiandae. 
+         Nemo blanditiis, asperiores
+         labore earum enim veniam magnam cum nihil culpa sint 
+         aliquam architecto voluptate optio.</p>
+         <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="firstname" id="fname" placeholder="your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="lastname" id="lname" placeholder="your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="country" id="country">
+                            <option value="india">India</option>
+                            <option value="canada">Cananda</option>
+                            <option value="america">America</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                       <textarea name="subject" id="subject" placeholder="write here" style="height: 200;"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+         </div>
+</body>
+</html>

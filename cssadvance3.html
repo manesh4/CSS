@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 15px;
+        }
+        html{
+            font-family: sans-serif;
+        }
+        .header{
+            background-color: rgb(16, 15, 82);
+            color: white;
+            padding: 15px;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: aqua;
+            color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover{
+            background-color: #0099cc;
+        }
+
+        .aside{
+            background-color: aqua;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        .footer{
+            background-color: #0099cc;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            padding: 15px;
+        }
+        [class*="col-"]{
+           width: 100%;
+        }
+
+        @media only screen and (min-width:600px)
+        {
+            .col-s-1{width: 8.33%;}
+            .col-s-2{width: 16.66%;}
+            .col-s-3{width: 25%;}
+            .col-s-4{width: 33.33%;}
+            .col-s-5{width: 41.66%;}
+            .col-s-6{width: 50%;}
+            .col-s-7{width: 58.33%;}
+            .col-s-8{width: 66.66%;}
+            .col-s-9{width: 75%;}
+            .col-s-10{width: 83.33%;}
+            .col-s-11{width: 91.66%;}
+            .col-s-12{width: 100%;}
+        }
+        @media only screen and (min-width:768px)
+        {
+            .col-s-1{width: 8.33%;}
+            .col-s-2{width: 16.66%;}
+            .col-s-3{width: 25%;}
+            .col-s-4{width: 33.33%;}
+            .col-s-5{width: 41.66%;}
+            .col-s-6{width: 50%;}
+            .col-s-7{width: 58.33%;}
+            .col-s-8{width: 66.66%;}
+            .col-s-9{width: 75%;}
+            .col-s-10{width: 83.33%;}
+            .col-s-11{width: 91.66%;}
+            .col-s-12{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>India</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Maharashtra</li>
+                <li>Karnataka</li>
+                <li>Tamilnadu</li>
+                <li>Gujrat</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1>India is Fastest It Country</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis modi officia ut, enim, veniam sunt nemo maiores
+                 sequi blanditiis laborum, dolores cumque sint iure. Earum nam molestiae voluptas voluptatum voluptates?</p>
+        </div>
+
+        <div class="col-3 col-s-12">
+             <div class="aside">
+                <h2>what...?</h2>
+                <p>india is the most populer city</p>
+                <h2>what...?</h2>
+                <p>india is the most populer city</p>
+                <h2>what...?</h2>
+                <p>india is the most populer city</p>
+             </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corrupti incidunt asperiores aut placeat mollitia at voluptates? Eaque,
+             ducimus debitis! Illum architecto ipsum reprehenderit! Accusamus necessitatibus quae incidunt quo qui?</p>
+    </div>
+</body>
+</html>

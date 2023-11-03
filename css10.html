@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body{
+        margin: 0;
+    }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #c6c5c5;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a {
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: rgb(78, 77, 77);
+            color: white;
+        }
+        li a.active{
+            background-color: #017c09;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: #555;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div style="margin-left: 25%; padding: 1px 16px; height: 1080px;">
+        <h2>Fixed full height side navbar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto enim eius debitis. Optio ex eos vitae expedita quae nobis, maiores cumque
+             voluptatum amet libero sed esse beatae magnam cum!</p>
+             <h2>this is a fixed navbar verticvally</h2>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas repellendus porro consectetur aliquam pariatur sit in. Eaque quidem, unde animi repellendus doloremque molestiae, 
+                aspernatur, laborum incidunt repellat rem possimus.</p>
+                <p>thi sis para</p>
+                <p>thi sis para</p>
+                <p>thi sis para</p>
+                <p>thi sis para</p>
+                <p>thi sis para</p>
+   <h2>this is a fixed navbar verticvally</h2>
+    <h2>this is a fixed navbar verticvally</h2>
+</div>
+</body>
+</html>
